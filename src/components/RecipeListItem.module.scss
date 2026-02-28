@@ -1,0 +1,15 @@
+@use '@/styles/typography';
+
+.root {
+  color: var(--stone-600);
+  padding-left: var(--space-100);
+  
+  &::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+  }
+  
+  > span {
+    @extend %text_p4b;
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --rose-50: #FFF7FB;
+  --rose-800: #7A284E;
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+  --brown-800: #854632;
+  --white: #FFFFFF;
+  
+  --space-1600: 128px;
+  --space-600: 48px;
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-150: 12px;
+  --space-100: 8px;
+}
+
+body {
+  background-color: black;
+}
+
+

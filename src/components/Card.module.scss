@@ -1,0 +1,77 @@
+@use "@/styles/typography";
+
+%list-base {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+%bullet-list {
+  @extend %list-base;
+  padding-left: var(--space-300);
+}
+
+%numbered-list {
+  @extend %list-base;
+  padding-left: var(--space-400);
+}
+
+.root {
+  background-color: white;
+  width: 736px;
+  margin: 0 auto;
+  border-radius: var(--space-200);
+  padding: var(--space-500);
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe_data {
+  @extend %text_p4;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+
+  p {
+    color: var(--stone-600);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+  > h1 {
+    @extend %text_p1;
+    color: var(--stone-900);
+  }
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  padding: var(--space-300);
+  border-radius: var(--space-150);
+  background-color: var(--rose-50);
+
+  > h1 {
+    @extend %text_p3;
+    color: var(--rose-800);
+  }
+  > ul {
+    @extend %bullet-list;
+  }
+}
+
+.ingredients {
+  > ul {
+    @extend %bullet-list;
+  }
+}
+
+.instructions {
+  > ol {
+    @extend %numbered-list;
+  }
+}

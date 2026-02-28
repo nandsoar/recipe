@@ -1,0 +1,22 @@
+@use "@/styles/typography";
+
+.root {
+  border-collapse: collapse;
+
+  td {
+    padding: var(--space-150) var(--space-400);
+  }
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid var(--stone-150);
+  }
+
+  .label {
+    color: var(--stone-600);
+  }
+  .value {
+    @extend %text_p4b;
+    color: var(--brown-800);
+    width: 50%;
+  }
+}

@@ -1,0 +1,12 @@
+@use '@/styles/typography';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  > h1 {
+    @extend %text_p2;
+    color: var(--brown-800);
+  }
+}
