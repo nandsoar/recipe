@@ -24,6 +24,9 @@
   padding: var(--space-500);
   display: flex;
   flex-direction: column;
+  > img {
+    margin-bottom: var(--space-500);
+  }
 }
 
 .recipe_data {

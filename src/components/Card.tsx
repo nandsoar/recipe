@@ -3,10 +3,12 @@ import styles from "./Card.module.scss"
 import { recipe } from "@/data/recipe"
 import BigSection from "@/components/BigSection"
 import NutritionTable from "@/components/NutritionTable"
+import dish from "@/assets/top-image.png"
 
 export default function Card() {
   return (
     <div className={styles.root}>
+      <img src={dish} alt="" />
       <div className={styles.recipe_data}>
         <div className={styles.intro}>
           <h1> Simple Omelette Recipe</h1>
@@ -44,7 +46,7 @@ export default function Card() {
             ))}
           </ol>
         </BigSection>
-        
+
         <BigSection className={styles.nutrition} heading="Nutrition">
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
           <NutritionTable />
