@@ -20,6 +20,7 @@
 
 body {
   background-color: var(--stone-100);
-  padding: var(--space-1600) var(--space-600);
-  
+  padding: 
+      clamp(0px, calc((100vw - 375px) * 0.19338422), var(--space-1600))
+      clamp(0px, calc((100vw - 375px) * 0.19338422), var(--space-600));
 }

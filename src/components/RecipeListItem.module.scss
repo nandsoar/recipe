@@ -7,6 +7,7 @@
   &::marker {
     color: var(--brown-800);
     font-weight: 700;
+    @extend %text_p4b;
   }
   
   > span {

@@ -1,5 +1,6 @@
 %text_p1 {
   font-size: 40px;
+  font-size: clamp(36px, 10vw, 40px);
   line-height: 1;
   letter-spacing: 0;
   font-family: 'Young Serif';

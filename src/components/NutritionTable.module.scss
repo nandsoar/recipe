@@ -5,6 +5,7 @@
 
   td {
     padding: var(--space-150) var(--space-400);
+    padding: var(--space-150) clamp(var(--space-100), 10%, var(--space-400));
   }
 
   tr:not(:last-child) td {
